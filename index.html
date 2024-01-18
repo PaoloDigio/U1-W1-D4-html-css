@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8" />
-    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <title>Blog Epicode</title>
     <meta
       name="description"
       content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="margin-y">
       <div>
         <img src="assets/img/logo.svg" alt="logo del blog" width="250" height="60" />
         <p>EPICODE - IL BLOG DEI DEVELOPERS</p>
@@ -39,31 +39,34 @@
         </ul>
       </nav>
     </header>
-    <hr />
-    <main>
+
+    <main class="margin-y">
       <article>
         <h1>Come creare un template per i post</h1>
-        <p>di Mario Rossi - <span>pubblicato il 25-10-2020</span></p>
+        <p class="text-grey">
+          <i class="fas fa-pen-square"></i>di Mario Rossi - <i class="fas fa-clock"></i
+          ><span>pubblicato il 25-10-2020</span>
+        </p>
         <p>
           La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le
-          <strong>parti comuni</strong> da applicare a tutte le pagine
+          <strong class="text-purple">parti comuni</strong> da applicare a tutte le pagine
         </p>
         <p>Le varie aree saranno quindi suddivise in:</p>
         <ul>
-          <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+          <li>Contenuti di intestazione del tag <code class="sections">&lt;header&gt;</code></li>
           <li>
             Contenuti centrali variabili del tag
-            <code>&lt;main&gt;</code> (corpo principale)
+            <code class="sections">&lt;main&gt;</code> (corpo principale)
           </li>
           <li>
             Contenuti di fine pagina comuni, da inserire nel tag
-            <code>&lt;footer&gt;</code>
+            <code class="sections">&lt;footer&gt;</code>
           </li>
         </ul>
         <h2>Formattazione del codice</h2>
         <p>
           Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da
-          <strong>selezionare con i CSS</strong>. Perciò i passi saranno:
+          <strong class="text-purple">selezionare con i CSS</strong>. Perciò i passi saranno:
         </p>
         <ol>
           <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
@@ -112,9 +115,7 @@
         </table>
         <p>
           Un test di validazione potrà essere fatto tramite il
-          <a href="https://jigsaw.w3.org/css-validator/" target="blank" title="Validatore CSS online del W3C"
-            >tool online</a
-          >
+          <a href="#" target="blank" title="tool online" class="text-light-blue">tool online</a>
           dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei
           veri developers come loro:
         </p>
@@ -136,7 +137,7 @@
         </section>
       </article>
     </main>
-    <aside>
+    <aside class="margin-y">
       <h2>Articoli correlati</h2>
       <div>
         <a href="post2.html" title="Passaggi guidati per validare correttamente tutto il codice sviluppato"
@@ -160,12 +161,12 @@
         <p>Data: 30-9-2020</p>
       </div>
     </aside>
-    <hr />
-    <footer>
+
+    <footer class="margin-y">
       <p>Blog Epicode &copy;2023</p>
       <address>
         Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.
-        <a href="mailto:info@epicode.school" title="contattami per informazioni/lavoro/privacy">info@epicode.school</a>
+        <a href="#" title="contattami" class="text-pink">info@epicode.school</a>
       </address>
     </footer>
   </body>
